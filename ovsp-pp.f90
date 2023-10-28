@@ -1,0 +1,14 @@
+PROGRAM OVSPPP
+    
+    USE MODULE_OVSPPP
+
+    TYPE(CONFIG) :: C
+    TYPE(MESH) :: M
+    TYPE(CONNECTIVITY) :: CN
+    
+    CALL SET_CONFIG(C)
+    
+    CALL READ_DATA(C, M, CN)
+    
+
+END PROGRAM
